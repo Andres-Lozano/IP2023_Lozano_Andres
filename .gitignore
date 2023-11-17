@@ -22,3 +22,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/Programas_En_Clase/TipologiaPelículas3/nbproject/private/
+/Programas_En_Clase/ParImpar1/nbproject/private/
+/Programas_En_Clase/AptitudSufragar1/nbproject/private/
+/Programas_En_Clase/ConvertidorTemp1/nbproject/private/
+/Programas_En_Clase/ConvertidorTemp1/build/
+/Programas_En_Clase/ParImpar1/build/
+/Programas_En_Clase/AptitudSufragar1/build/
+/Programas_En_Clase/MenuOpciones1/nbproject/private/
+/Programas_En_Clase/MenuOpciones1/build/

@@ -1,48 +1,37 @@
 import java.util.Scanner;
-public class CompraElectrodomestico1{
-	public static void main(String[] args) {
+
+public class CompraElectrodomestico1 {
+	public static void main (String[] args) {
+		
 
 		Scanner lea = new Scanner(System.in);
-
-		float precioBase,precioIVA;
-		int  pesoLb;
-		float precioLb;
-		int  distanciaKb;
-		float envio;
-		double total;
+		double precioBase;
+		int libras;
+		int kilometros;
+		double precioConIVA;
+		double costoEnvio;
+		double totalPagar;
 		
-		System.out.println("FACTURACION DE ElCTRODOMESTICO");
-		System.out.println("==============================");
+
+		System.out.println("Ingrese el precio del electrodomestico: ");
+		precioBase = lea.nextDouble();
+		System.out.println("Ingrese el peso en libras: ");
+		libras = lea.nextInt();
+		System.out.println("Ingrese la distancia al domicilio en Km: ");
+		kilometros = lea.nextInt();
 		System.out.println("");
+		
 
-		System.out.print("Ingrese el precio del Electrodomestico: ");
-		precioBase = lea.nextFloat();
-		System.out.print("Ingrese el Peso en Libras: ");
-		pesoLb = lea.nextInt();
-		System.out.print("Ingrese la distacia del Domicilio: ");
-		distanciaKb = lea.nextInt();
+		precioConIVA = 1.12 * precioBase;
+		costoEnvio = 0.01 * libras * kilometros;
+		totalPagar = precioConIVA + costoEnvio; 
+		
 
-
-		precioIVA = (precioBase * 0.12) + precioBase;
-		precioLb = pesoLb * 0.01;
-		envio = distanciaKb * 0.01;
-
-		total = precioIVA + precioLb + envio;
-
-		System.out.println("Total a pagar con IVA y entrega a Domicilio: " + total + "USD");
-
+		System.out.println("Total a pagar con IVA y entrega a domicilio: " +totalPagar+ " USD");
 
 		lea.close();
 
 
 
-
-
-
-
-
-
-
-		
 	}
 }

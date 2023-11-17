@@ -28,11 +28,9 @@ public class CalculoSalario {
             salario *= 1.05; 
         }
 
-        // Mostrar los resultados
         System.out.println("Nombre: " + nombre);
         System.out.println("Salario con descuento o incremento: $" + salario);
 
-        // Cerrar el objeto Scanner
         scanner.close();
     }
 }
